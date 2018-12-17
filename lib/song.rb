@@ -4,8 +4,13 @@ class Song
 # Class Methods and Variables
   @@count = 0
   @@genres = []
+
   def self.count
     @@count
+  end
+
+  def self.genres
+    @@genres
   end
 
 #Instance Methods
