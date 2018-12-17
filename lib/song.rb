@@ -4,6 +4,7 @@ class Song
 # Class Methods and Variables
   @@count = 0
   @@genres = []
+  @@artists = []
 
   def self.count
     @@count
