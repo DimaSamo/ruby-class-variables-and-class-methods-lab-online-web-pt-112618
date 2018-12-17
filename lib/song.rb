@@ -18,6 +18,13 @@ class Song
     @@artists.uniq
   end
 
+  def self.genre_count
+    return_hash = {}
+    @@genres.each do |genre|
+      return_hash.has_key?(genre) ? return_hash[genre] += 1 : return_hash[genre] = 1
+    end
+  end
+
 #Instance Methods
   def initialize(name, artist, genre)
     @name = name
