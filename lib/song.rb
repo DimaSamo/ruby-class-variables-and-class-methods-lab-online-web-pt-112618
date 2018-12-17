@@ -14,6 +14,10 @@ class Song
     @@genres.uniq
   end
 
+  def self.artists
+    @@artists.uniq
+  end
+
 #Instance Methods
   def initialize(name, artist, genre)
     @name = name
