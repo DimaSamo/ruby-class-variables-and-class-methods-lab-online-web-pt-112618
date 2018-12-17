@@ -23,6 +23,7 @@ class Song
     @@genres.each do |genre|
       return_hash.has_key?(genre) ? return_hash[genre] += 1 : return_hash[genre] = 1
     end
+    return_hash
   end
 
 #Instance Methods
